@@ -10,31 +10,31 @@
     <!-- Login Section -->
     <section id="loginSection">
         <h2 id="loginHeading">Login</h2>
+        <input type="email" id="emailInput" placeholder="Enter Email">
         <input type="password" id="passwordInput" placeholder="Enter Password">
-        <input type="text" id="pinInput" placeholder="Enter Pin">
         <button onclick="login()">Login</button>
         <p id="loginMessage"></p>
     </section>
 
     <!-- Converter Section -->
     <section id="converterSection" style="display:none;">
-        <h2>Text-to-Hash & Hash-to-Text Converter</h2>
+        <h2>Text to Hash & Hash to Text Converter</h2>
         
         <div class="converter-box">
             <h3>Text to Hash</h3>
             <input type="text" id="textInput" placeholder="Enter text here">
             <button onclick="convertTextToHash()">Convert to Hash</button>
-            <p id="hashOutput">Hash: </p>
+            <input type="text" id="hashOutput" class="copy-box" readonly onclick="copyToClipboard('hashOutput')" placeholder="Hash will appear here">
         </div>
         
         <div class="converter-box">
             <h3>Hash to Text</h3>
             <input type="text" id="hashInput" placeholder="Enter hash here">
             <button onclick="convertHashToText()">Convert to Text</button>
-            <p id="textOutput">Original Text: </p>
+            <input type="text" id="textOutput" class="copy-box" readonly onclick="copyToClipboard('textOutput')" placeholder="Original text will appear here">
         </div>
     </section>
-
     <script src="converter.js"></script>
 </body>
-</html>
+    </html>
+    
