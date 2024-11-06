@@ -1,5 +1,3 @@
-// converter.js
-
 // Define the correct password and pin for login
 const correctPassword = 'Nahid@20087';
 const correctPin = '19833';
